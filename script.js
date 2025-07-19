@@ -29,7 +29,8 @@ for (let i = 0; i < 10; i++) {
 
     // ! metto qui le const della lista html
     const ul = document.getElementById(`email-list`);
-    const li = document.getElement(`li`);
+    const li = document.createElement(`li`);
+    li.className = `list-group-item`;
     li.textContent = emailValue;
     ul.appendChild(li);
 
@@ -41,3 +42,4 @@ for (let i = 0; i < 10; i++) {
 
 }
 // * molto meglio, rigraziamo internet e quei benedetti di stackOverFlow
+
